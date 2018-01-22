@@ -18,17 +18,14 @@ public class FusekiVehicule {
             Property predicate = stmt.getPredicate();   // get the predicate
             RDFNode object = stmt.getObject();      // get the object
             String UPDATE_TEMPLATE =
-                    "PREFIX dc: <http://purl.org/dc/elements/1.1/>"
-                            + "PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>"
-                            + "PREFIX lat:<http://www.w3.org/2003/01/geo/wgs84_pos#lat>"
-                            + "PREFIX long:<http://www.w3.org/2003/01/geo/wgs84_pos#long>"
+                            "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>"
                             + "INSERT DATA"
-                            + " {<"+ subject.toString()+">   geo:long    " + object.toString() + "  }";
+                            + " {<"+ subject.toString()+">   geo:long    " + object.toString() +"; geo:lat    " + object.toString() +" }";
 
             System.out.println(UPDATE_TEMPLATE);
 
             UpdateProcessor upp = UpdateExecutionFactory.createRemote(UpdateFactory.create(UPDATE_TEMPLATE),
-                    "http://localhost:3030/MyData/update");
+                    "http://localhost:3030/MyDataVehicule/update");
             //  String reqStr = UpdateFactory.create(UPDATE_TEMPLATE).toString() ;
             // HttpOp.execHttpPost("http://localhost:3030/vehicles/update", "application/x-www-form-urlencoded", reqStr) ;
             upp.execute();
