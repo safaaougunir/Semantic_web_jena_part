@@ -1,0 +1,53 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ex:    <http://example.com/stations/> .
+@prefix wo:    <http://opensensingcity.emse.fr/ontologies/weather#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.com/stations/StopArea%3AOCE80194258>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de Landau Hbf"@fr ;
+        wo:WeatherState  "Drizzle"@fr ;
+        geo:lat          49.19762565 ;
+        geo:long         8.12559939 .
+
+<http://example.com/stations/StopArea%3AOCE87213470>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de Wissembourg"@fr ;
+        wo:WeatherState  "Drizzle"@fr ;
+        geo:lat          49.03153308 ;
+        geo:long         7.95030589 .
+
+<http://example.com/stations/StopArea%3AOCE80194324>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de WINDEN PFALZ"@fr ;
+        wo:WeatherState  "Drizzle"@fr ;
+        geo:lat          49.09544004 ;
+        geo:long         8.1224056 .
+
+<http://example.com/stations/StopArea%3AOCE80194035>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de Neustadt (Weinstr) Hbf"@fr ;
+        wo:WeatherState  "Drizzle"@fr ;
+        geo:lat          49.35006155 ;
+        geo:long         8.14067588 .
+
+<http://example.com/stations/StopArea%3AOCE87116137>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de Longueville (S.-et-M.)"@fr ;
+        wo:WeatherState  "Drizzle"@fr ;
+        geo:lat          48.51351115 ;
+        geo:long         3.24968453 .
+
+<http://example.com/stations/StopArea%3AOCE80191031>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de WOERTH RHEIN"@fr ;
+        wo:WeatherState  "Drizzle"@fr ;
+        geo:lat          49.04609506 ;
+        geo:long         8.27334841 .
+
+<http://example.com/stations/StopArea%3AOCE87212464>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de Lauterbourg"@fr ;
+        wo:WeatherState  "Rain"@fr ;
+        geo:lat          48.96725483 ;
+        geo:long         8.1828186 .

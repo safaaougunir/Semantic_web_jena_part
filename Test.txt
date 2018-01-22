@@ -1,0 +1,7 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station
+StopArea:OCE80194035,"Gare de Neustadt (Weinstr) Hbf",,49.35006155,8.14067588,,,1,
+StopArea:OCE87484147,"Gare de Tiercé",,47.61753175,-0.46943641,,,1,
+StopArea:OCE87784793,"Gare de Mont-Louis-la-Cabanasse",,42.50197726,2.11441876,,,1,
+StopArea:OCE87641902,"Aspach-le-Haut-D103/34",,47.77612507,7.13410323,,,1,
+StopArea:OCE87641274,"Laqueuille",,45.64695041,2.70493827,,,1,
+StopArea:OCE87594739,"Gare de Vayrac",,44.95013784,1.70628811,,,1,

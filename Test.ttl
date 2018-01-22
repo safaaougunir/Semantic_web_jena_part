@@ -1,0 +1,46 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ex:    <http://example.com/stations/> .
+@prefix wo:    <http://opensensingcity.emse.fr/ontologies/weather#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.com/stations/StopArea%3AOCE87484147>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de Tiercé"@fr ;
+        wo:WeatherState  "Drizzle"@fr ;
+        geo:lat          47.61753175 ;
+        geo:long         -0.46943641 .
+
+<http://example.com/stations/StopArea%3AOCE87641274>
+        a                geo:SpatialThing ;
+        rdfs:label       "Laqueuille"@fr ;
+        wo:WeatherState  "Clouds"@fr ;
+        geo:lat          45.64695041 ;
+        geo:long         2.70493827 .
+
+<http://example.com/stations/StopArea%3AOCE87594739>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de Vayrac"@fr ;
+        wo:WeatherState  "Drizzle"@fr ;
+        geo:lat          44.95013784 ;
+        geo:long         1.70628811 .
+
+<http://example.com/stations/StopArea%3AOCE80194035>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de Neustadt (Weinstr) Hbf"@fr ;
+        wo:WeatherState  "Mist"@fr ;
+        geo:lat          49.35006155 ;
+        geo:long         8.14067588 .
+
+<http://example.com/stations/StopArea%3AOCE87641902>
+        a                geo:SpatialThing ;
+        rdfs:label       "Aspach-le-Haut-D103/34"@fr ;
+        wo:WeatherState  "Rain"@fr ;
+        geo:lat          47.77612507 ;
+        geo:long         7.13410323 .
+
+<http://example.com/stations/StopArea%3AOCE87784793>
+        a                geo:SpatialThing ;
+        rdfs:label       "Gare de Mont-Louis-la-Cabanasse"@fr ;
+        wo:WeatherState  "Clear"@fr ;
+        geo:lat          42.50197726 ;
+        geo:long         2.11441876 .

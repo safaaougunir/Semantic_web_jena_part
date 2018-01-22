@@ -1,0 +1,76 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ex:    <http://example.com/stations/> .
+@prefix wo:    <http://opensensingcity.emse.fr/ontologies/weather> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://example.com/stations/StopPoint%3AOCECar+TER-87665489>
+        a           geo:SpatialThing ;
+        rdfs:label  "Munster-D417-Badischhof"@fr ;
+        wo:WeatherState "Drizzle"@fr ;
+        geo:lat     48.0406622 ;
+        geo:long    7.15037383 .
+
+<http://example.com/stations/StopPoint%3AOCECar+TER-87409763>
+        a           geo:SpatialThing ;
+        rdfs:label  "Bois-d'Oingt-Centre"@fr ;
+        wo:WeatherState "Drizzle"@fr ;
+        geo:lat     45.92165924 ;
+        geo:long    4.58527403 .
+
+<http://example.com/stations/StopPoint%3AOCETrain+TER-87343301>
+        a           geo:SpatialThing ;
+        rdfs:label  "Gare de Wallers"@fr ;
+        wo:WeatherState "Rain"@fr ;
+        geo:lat     50.38454943 ;
+        geo:long    3.39393723 .
+
+<http://example.com/stations/StopPoint%3AOCETrain+TER-87746727>
+        a           geo:SpatialThing ;
+        rdfs:label  "Gare de Vaudagne"@fr ;
+        wo:WeatherState "Rain"@fr ;
+        geo:lat     45.90902046 ;
+        geo:long    6.77258774 .
+
+<http://example.com/stations/StopArea%3AOCE87387001>
+        a           geo:SpatialThing ;
+        rdfs:label  "Gare de Evreux - Normandie"@fr ;
+        wo:WeatherState "Drizzle"@fr ;
+        geo:lat     49.01855876 ;
+        geo:long    1.14988767 .
+
+<http://example.com/stations/StopPoint%3AOCECar+TER-87746867>
+        a           geo:SpatialThing ;
+        rdfs:label  "Gare de Montroc-le-Planet"@fr ;
+        wo:WeatherState "Snow"@fr ;
+        geo:lat     45.99645143 ;
+        geo:long    6.9345514 .
+
+<http://example.com/stations/StopPoint%3AOCETrain+TER-87584193>
+        a           geo:SpatialThing ;
+        rdfs:label  "Gare de Ste-Foy-la-Grande"@fr ;
+        wo:WeatherState "Rain"@fr ;
+        geo:lat     44.83686036 ;
+        geo:long    0.22132701 .
+
+<http://example.com/stations/StopPoint%3AOCECar+TER-87574327>
+        a           geo:SpatialThing ;
+        rdfs:label  "Gare de Veuves-Monteaux"@fr ;
+        wo:WeatherState "Rain"@fr ;
+        geo:lat     47.47550337 ;
+        geo:long    1.12366267 .
+
+<http://example.com/stations/StopPoint%3AOCECar+TER-87107417>
+        a           geo:SpatialThing ;
+        rdfs:label  "Chaumont-Hôpital"@fr ;
+        wo:WeatherState "Drizzle"@fr ;
+        geo:lat     48.11971635 ;
+        geo:long    5.13915689 .
+
+<http://example.com/stations/StopPoint%3AOCECar+TER-87668111>
+        a           geo:SpatialThing ;
+        rdfs:label  "Montbeugny-Centre"@fr ;
+        wo:WeatherState "Drizzle"@fr ;
+        geo:lat     46.52818939 ;
+        geo:long    3.49270377 .
+

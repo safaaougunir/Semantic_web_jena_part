@@ -1,0 +1,8 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station
+StopArea:OCE80194035,"Gare de Neustadt (Weinstr) Hbf",,49.35006155,8.14067588,,,1,
+StopArea:OCE80194258,"Gare de Landau Hbf",,49.19762565,8.12559939,,,1,
+StopArea:OCE80194324,"Gare de WINDEN PFALZ",,49.09544004,8.1224056,,,1,
+StopArea:OCE87213470,"Gare de Wissembourg",,49.03153308,7.95030589,,,1,
+StopArea:OCE80191031,"Gare de WOERTH RHEIN",,49.04609506,8.27334841,,,1,
+StopArea:OCE87212464,"Gare de Lauterbourg",,48.96725483,8.1828186,,,1,
+StopArea:OCE87116137,"Gare de Longueville (S.-et-M.)",,48.51351115,3.24968453,,,1,
