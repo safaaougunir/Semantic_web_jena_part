@@ -1,6 +1,7 @@
 "# Semantic_web_jena_part" 
 
 this project aims to combines what we learned during semantic web classes.I had combined data from TER lines (https://ressources.data.sncf.com/explore/dataset/sncf-ter-gtfs/) and (http://http://openweathermap.org/) API in order to execute two senarios :  
+
     + Senario 1 :
         - Get all stations and their position from TER to fill my Sparql database.
         - Get their current weather from openweathermap using their lat and long.
