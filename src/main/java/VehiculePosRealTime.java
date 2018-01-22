@@ -38,6 +38,15 @@ import static org.apache.jena.enhanced.BuiltinPersonalities.model;
 
 public class VehiculePosRealTime {
 
+    // Namespaces of the vocabularies we use
+    public static final String _GEO_NS = "http://www.w3.org/2003/01/geo/wgs84_pos#";
+    // Prefixes
+    public static final String _GEO_PREFIX = "geo";
+
+
+    // THE IRIs of the geo: terms we are using
+    public static final String _GEO_LAT = "http://www.w3.org/2003/01/geo/wgs84_pos#lat";
+    public static final String _GEO_LONG = "http://www.w3.org/2003/01/geo/wgs84_pos#long";
 
     private static String getVehicleId(GtfsRealtime.VehiclePosition vehicle) {
         if (!vehicle.hasVehicle()) {
@@ -50,13 +59,18 @@ public class VehiculePosRealTime {
 
         //jena
         Model model = ModelFactory.createDefaultModel();
-        Map<String, String> vehicleIdsByEntityIds = new HashMap<String, String>();
+
+        // Define prefixes for pretty output
+        model.setNsPrefix(_GEO_PREFIX,_GEO_NS);
+
+        Property geo_lat = model.createProperty(_GEO_LAT);
+        Property geo_long = model.createProperty(_GEO_LONG);
+
+
         Map<String, Vehicule> vehiclesById = new ConcurrentHashMap<String, Vehicule>();
 
         URL url = new URL("http://developer.mbta.com/lib/GTRTFS/Alerts/VehiclePositions.pb");
-        Property geo = ResourceFactory.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#");
-        Property lat = ResourceFactory.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#lat");
-        Property lon = ResourceFactory.createProperty("http://www.w3.org/2003/01/geo/wgs84_pos#long");
+
         //  while (true) {
         GtfsRealtime.FeedMessage feed = GtfsRealtime.FeedMessage.parseFrom(url.openStream());
         for (GtfsRealtime.FeedEntity entity : feed.getEntityList()) {
@@ -80,8 +94,8 @@ public class VehiculePosRealTime {
                     if (existing == null) {
 
                         Resource vehiclerdf = model.createResource(vehicleURI)
-                                .addProperty(lat, Double.toString(v.getLat()))
-                                .addProperty(lon, Double.toString(v.getLon()));
+                                .addProperty(geo_lat,Double.toString(v.getLat()))
+                                .addProperty(geo_long,Double.toString(v.getLon()));
 
                         vehiclesById.put(vehicleId, v);
                         System.out.println(v.getId());
@@ -92,13 +106,13 @@ public class VehiculePosRealTime {
                         System.out.println("-------------------------------------------------------------");
                     }
                     Resource r = model.getResource(vehicleURI);
-                    if (r.getProperty(lat).getDouble() != v.getLat()) {
-                        r.removeAll(lon);
-                        r.addProperty(lon, Double.toString(v.getLon()));
+                    if (r.getProperty(geo_lat).getDouble() != v.getLat()) {
+                        r.removeAll(geo_lat);
+                        r.addProperty(geo_lat, Double.toString(v.getLon()));
                     }
-                    if (r.getProperty(lon).getDouble() != v.getLon()) {
-                        r.removeAll(lat);
-                        r.addProperty(lat, Double.toString(v.getLat()));
+                    if (r.getProperty(geo_long).getDouble() != v.getLon()) {
+                        r.removeAll(geo_long);
+                        r.addProperty(geo_long, Double.toString(v.getLat()));
                     }
                 }
             }
