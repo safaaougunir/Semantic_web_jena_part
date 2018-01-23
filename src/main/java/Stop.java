@@ -9,8 +9,6 @@ public class Stop {
     private String lon;
 
 
-
-
     public String getId() {
         return id;
     }
